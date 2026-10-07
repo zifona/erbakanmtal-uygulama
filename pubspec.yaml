@@ -1,0 +1,36 @@
+name: erbakanmtal
+description: Prof. Dr. Necmettin Erbakan MTAL resmi web sitesinin mobil uygulaması.
+publish_to: 'none'
+
+# Sürüm adı. Derleme numarası GitHub'da her derlemede otomatik artar.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+# "any": derleme sırasında her paketin uyumlu en güncel sürümü kullanılır.
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: any
+  url_launcher: any
+  firebase_core: any
+  firebase_messaging: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: any
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/icon.png
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/icon_foreground.png
+  min_sdk_android: 23
